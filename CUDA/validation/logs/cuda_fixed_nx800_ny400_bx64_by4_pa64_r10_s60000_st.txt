@@ -1,0 +1,5 @@
+samples used : 30000  (skipped first 30000)
+sample dt    : 1  lattice steps
+peak freq    : 4.000000e-04  cycles per lattice step
+period       : 2500.00  steps
+St           : 0.1600    (literature ~ 0.16 at Re 100)

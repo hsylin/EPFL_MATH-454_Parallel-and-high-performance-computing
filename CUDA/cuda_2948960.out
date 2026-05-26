@@ -1,0 +1,47 @@
+Running LBM CUDA
+SLURM_JOB_ID=2948960
+SLURM_NODELIST=i34
+CUDA_VISIBLE_DEVICES=0
+Parameters:
+  nx=800 ny=400 re=100 u_in=0.05 steps=60000
+  every=500 out=out/lbm probe=probe.csv
+  block_x=32 block_y=8 pitch_align=32 probe_every=1
+Tue May 26 19:39:50 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.154.05             Driver Version: 535.154.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-PCIE-32GB           On  | 00000000:D8:00.0 Off |                  Off |
+| N/A   31C    P0              40W / 250W |      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+LBM 2D D2Q9 BGK (CUDA optimized: fused pull-collide)
+  grid          : 800 x 400
+  CUDA block    : 32 x 8 (256 threads)
+  pitch         : 800 (align 32)
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.53
+  cylinder      : (200, 200), r = 10
+  steps         : 60000
+  output every  : 500 (0 = off)
+  output prefix : out/lbm
+  probe at      : (280, 200)
+  probe csv     : probe.csv
+  probe every   : 1 (0 = off)
+  timing note   : output is enabled, so Wall time/MLUPS include HDF5 output and host post-processing. Use every=0 for CUDA performance sweeps.
+  step 500 / 60000  step 1000 / 60000  step 1500 / 60000  step 2000 / 60000  step 2500 / 60000  step 3000 / 60000  step 3500 / 60000  step 4000 / 60000  step 4500 / 60000  step 5000 / 60000  step 5500 / 60000  step 6000 / 60000  step 6500 / 60000  step 7000 / 60000  step 7500 / 60000  step 8000 / 60000  step 8500 / 60000  step 9000 / 60000  step 9500 / 60000  step 10000 / 60000  step 10500 / 60000  step 11000 / 60000  step 11500 / 60000  step 12000 / 60000  step 12500 / 60000  step 13000 / 60000  step 13500 / 60000  step 14000 / 60000  step 14500 / 60000  step 15000 / 60000  step 15500 / 60000  step 16000 / 60000  step 16500 / 60000  step 17000 / 60000  step 17500 / 60000  step 18000 / 60000  step 18500 / 60000  step 19000 / 60000  step 19500 / 60000  step 20000 / 60000  step 20500 / 60000  step 21000 / 60000  step 21500 / 60000  step 22000 / 60000  step 22500 / 60000  step 23000 / 60000  step 23500 / 60000  step 24000 / 60000  step 24500 / 60000  step 25000 / 60000  step 25500 / 60000  step 26000 / 60000  step 26500 / 60000  step 27000 / 60000  step 27500 / 60000  step 28000 / 60000  step 28500 / 60000  step 29000 / 60000  step 29500 / 60000  step 30000 / 60000  step 30500 / 60000  step 31000 / 60000  step 31500 / 60000  step 32000 / 60000  step 32500 / 60000  step 33000 / 60000  step 33500 / 60000  step 34000 / 60000  step 34500 / 60000  step 35000 / 60000  step 35500 / 60000  step 36000 / 60000  step 36500 / 60000  step 37000 / 60000  step 37500 / 60000  step 38000 / 60000  step 38500 / 60000  step 39000 / 60000  step 39500 / 60000  step 40000 / 60000  step 40500 / 60000  step 41000 / 60000  step 41500 / 60000  step 42000 / 60000  step 42500 / 60000  step 43000 / 60000  step 43500 / 60000  step 44000 / 60000  step 44500 / 60000  step 45000 / 60000  step 45500 / 60000  step 46000 / 60000  step 46500 / 60000  step 47000 / 60000  step 47500 / 60000  step 48000 / 60000  step 48500 / 60000  step 49000 / 60000  step 49500 / 60000  step 50000 / 60000  step 50500 / 60000  step 51000 / 60000  step 51500 / 60000  step 52000 / 60000  step 52500 / 60000  step 53000 / 60000  step 53500 / 60000  step 54000 / 60000  step 54500 / 60000  step 55000 / 60000  step 55500 / 60000  step 56000 / 60000  step 56500 / 60000  step 57000 / 60000  step 57500 / 60000  step 58000 / 60000  step 58500 / 60000  step 59000 / 60000  step 59500 / 60000  step 60000 / 60000
+Wall time : 36.268 s
+MLUPS     : 529.393
+Done.

@@ -1,0 +1,19 @@
+Command:
+  /home/hlin/CUDA/lbm_cuda_opt nx=1600 ny=800 re=100 u_in=0.05 steps=60000 every=0 block_x=16 block_y=16 pitch_align=64 probe_every=0 out=/home/hlin/CUDA/scaling/out/cuda_nx1600_ny800_bx16_by16_pa64_s60000 probe=/dev/null
+----
+LBM 2D D2Q9 BGK (CUDA optimized: fused pull-collide)
+  grid          : 1600 x 800
+  CUDA block    : 16 x 16 (256 threads)
+  pitch         : 1600 (align 64)
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.56
+  cylinder      : (400, 400), r = 20
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : /home/hlin/CUDA/scaling/out/cuda_nx1600_ny800_bx16_by16_pa64_s60000
+  probe at      : (560, 400)
+  probe csv     : /dev/null
+  probe every   : 0 (0 = off)
+Wall time : 16.1221 s
+MLUPS     : 4763.66

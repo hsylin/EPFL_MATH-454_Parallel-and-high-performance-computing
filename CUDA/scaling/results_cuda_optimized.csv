@@ -1,0 +1,5 @@
+grid,nx,ny,block_x,block_y,threads_per_block,pitch_align,steps,wall_time_s,mlups,log
+1500x750,1500,750,64,4,256,1,60000,14.1458,4771.73,/home/hlin/CUDA/scaling/logs/cuda_nx1500_ny750_bx64_by4_pa1_s60000.log
+1500x750,1500,750,64,4,256,16,60000,13.9362,4843.51,/home/hlin/CUDA/scaling/logs/cuda_nx1500_ny750_bx64_by4_pa16_s60000.log
+1500x750,1500,750,64,4,256,32,60000,13.942,4841.47,/home/hlin/CUDA/scaling/logs/cuda_nx1500_ny750_bx64_by4_pa32_s60000.log
+1500x750,1500,750,64,4,256,64,60000,13.7562,4906.88,/home/hlin/CUDA/scaling/logs/cuda_nx1500_ny750_bx64_by4_pa64_s60000.log

@@ -1,0 +1,113 @@
+ROOT_DIR = /home/hlin/CUDA
+PWD      = /home/hlin/CUDA
+Loaded modules:
+CUDA compiler:
+/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/cuda-11.8.0-digmv672nnmhjnm43eg6xagxqaa56igy/bin/nvcc
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:33:58_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+Cleaning old binaries...
+Building CUDA solver...
+rm -f lbm_cuda_opt *.o *~
+/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-x86_64_v2/gcc-11.2.1/gcc-11.3.0-xt3pxujartqg46r6lercdmcya5bcxth4/bin/g++ -O3 -Wall -Wextra -std=c++11 -I/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/hdf5-1.12.2-eym7bvsim6gx7dzgghwmh6p3d3qqimpv/include -c -o main.o main.cc
+nvcc -O3 -std=c++11 -arch=sm_70 -I/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/hdf5-1.12.2-eym7bvsim6gx7dzgghwmh6p3d3qqimpv/include -Xcompiler "-Wall -Wextra" -c -o lbm.o lbm.cu
+/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-x86_64_v2/gcc-11.2.1/gcc-11.3.0-xt3pxujartqg46r6lercdmcya5bcxth4/bin/g++ -O3 -Wall -Wextra -std=c++11 -I/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/hdf5-1.12.2-eym7bvsim6gx7dzgghwmh6p3d3qqimpv/include -c -o output.o output.cc
+nvcc -o lbm_cuda_opt main.o lbm.o output.o -L/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/hdf5-1.12.2-eym7bvsim6gx7dzgghwmh6p3d3qqimpv/lib -lhdf5 -lm
+Running CUDA performance sweep...
+=== CUDA sweep: steps=60000 ===
+Grids        : 400x200 800x400 1600x800
+Blocks       : 16x16 32x4 32x8 32x16 64x4
+Pitch aligns : 1 16 32 64
+Logs         : /home/hlin/CUDA/scaling/logs
+CSV          : /home/hlin/CUDA/scaling/results_cuda_optimized.csv
+
+[run ] cuda_nx400_ny200_bx16_by16_pa1_s60000
+[run ] cuda_nx400_ny200_bx32_by4_pa1_s60000
+[run ] cuda_nx400_ny200_bx32_by8_pa1_s60000
+[run ] cuda_nx400_ny200_bx32_by16_pa1_s60000
+[run ] cuda_nx400_ny200_bx64_by4_pa1_s60000
+[run ] cuda_nx400_ny200_bx16_by16_pa16_s60000
+[run ] cuda_nx400_ny200_bx32_by4_pa16_s60000
+[run ] cuda_nx400_ny200_bx32_by8_pa16_s60000
+[run ] cuda_nx400_ny200_bx32_by16_pa16_s60000
+[run ] cuda_nx400_ny200_bx64_by4_pa16_s60000
+[run ] cuda_nx400_ny200_bx16_by16_pa32_s60000
+[run ] cuda_nx400_ny200_bx32_by4_pa32_s60000
+[run ] cuda_nx400_ny200_bx32_by8_pa32_s60000
+[run ] cuda_nx400_ny200_bx32_by16_pa32_s60000
+[run ] cuda_nx400_ny200_bx64_by4_pa32_s60000
+[run ] cuda_nx400_ny200_bx16_by16_pa64_s60000
+[run ] cuda_nx400_ny200_bx32_by4_pa64_s60000
+[run ] cuda_nx400_ny200_bx32_by8_pa64_s60000
+[run ] cuda_nx400_ny200_bx32_by16_pa64_s60000
+[run ] cuda_nx400_ny200_bx64_by4_pa64_s60000
+[run ] cuda_nx800_ny400_bx16_by16_pa1_s60000
+[run ] cuda_nx800_ny400_bx32_by4_pa1_s60000
+[run ] cuda_nx800_ny400_bx32_by8_pa1_s60000
+[run ] cuda_nx800_ny400_bx32_by16_pa1_s60000
+[run ] cuda_nx800_ny400_bx64_by4_pa1_s60000
+[run ] cuda_nx800_ny400_bx16_by16_pa16_s60000
+[run ] cuda_nx800_ny400_bx32_by4_pa16_s60000
+[run ] cuda_nx800_ny400_bx32_by8_pa16_s60000
+[run ] cuda_nx800_ny400_bx32_by16_pa16_s60000
+[run ] cuda_nx800_ny400_bx64_by4_pa16_s60000
+[run ] cuda_nx800_ny400_bx16_by16_pa32_s60000
+[run ] cuda_nx800_ny400_bx32_by4_pa32_s60000
+[run ] cuda_nx800_ny400_bx32_by8_pa32_s60000
+[run ] cuda_nx800_ny400_bx32_by16_pa32_s60000
+[run ] cuda_nx800_ny400_bx64_by4_pa32_s60000
+[run ] cuda_nx800_ny400_bx16_by16_pa64_s60000
+[run ] cuda_nx800_ny400_bx32_by4_pa64_s60000
+[run ] cuda_nx800_ny400_bx32_by8_pa64_s60000
+[run ] cuda_nx800_ny400_bx32_by16_pa64_s60000
+[run ] cuda_nx800_ny400_bx64_by4_pa64_s60000
+[run ] cuda_nx1600_ny800_bx16_by16_pa1_s60000
+[run ] cuda_nx1600_ny800_bx32_by4_pa1_s60000
+[run ] cuda_nx1600_ny800_bx32_by8_pa1_s60000
+[run ] cuda_nx1600_ny800_bx32_by16_pa1_s60000
+[run ] cuda_nx1600_ny800_bx64_by4_pa1_s60000
+[run ] cuda_nx1600_ny800_bx16_by16_pa16_s60000
+[run ] cuda_nx1600_ny800_bx32_by4_pa16_s60000
+[run ] cuda_nx1600_ny800_bx32_by8_pa16_s60000
+[run ] cuda_nx1600_ny800_bx32_by16_pa16_s60000
+[run ] cuda_nx1600_ny800_bx64_by4_pa16_s60000
+[run ] cuda_nx1600_ny800_bx16_by16_pa32_s60000
+[run ] cuda_nx1600_ny800_bx32_by4_pa32_s60000
+[run ] cuda_nx1600_ny800_bx32_by8_pa32_s60000
+[run ] cuda_nx1600_ny800_bx32_by16_pa32_s60000
+[run ] cuda_nx1600_ny800_bx64_by4_pa32_s60000
+[run ] cuda_nx1600_ny800_bx16_by16_pa64_s60000
+[run ] cuda_nx1600_ny800_bx32_by4_pa64_s60000
+[run ] cuda_nx1600_ny800_bx32_by8_pa64_s60000
+[run ] cuda_nx1600_ny800_bx32_by16_pa64_s60000
+[run ] cuda_nx1600_ny800_bx64_by4_pa64_s60000
+
+Wrote /home/hlin/CUDA/scaling/results_cuda_optimized.csv
+Logs are in /home/hlin/CUDA/scaling/logs
+Running focused memory-layout sweep on non-aligned grid 1500x750...
+=== CUDA sweep: steps=60000 ===
+Grids        : 1500x750
+Blocks       : 64x4
+Pitch aligns : 1 16 32 64
+Logs         : /home/hlin/CUDA/scaling/logs
+CSV          : /home/hlin/CUDA/scaling/results_cuda_optimized.csv
+
+[run ] cuda_nx1500_ny750_bx64_by4_pa1_s60000
+[run ] cuda_nx1500_ny750_bx64_by4_pa16_s60000
+[run ] cuda_nx1500_ny750_bx64_by4_pa32_s60000
+[run ] cuda_nx1500_ny750_bx64_by4_pa64_s60000
+
+Wrote /home/hlin/CUDA/scaling/results_cuda_optimized.csv
+Logs are in /home/hlin/CUDA/scaling/logs
+Generating CUDA markdown table...
+Parsed 64 CUDA runs
+Wrote /home/hlin/CUDA/scaling/scaling.md
+Generating CUDA HTML table...
+Wrote /home/hlin/CUDA/scaling/scaling.html
+Generated files:
+-rw-r--r--+ 1 hlin in-ma2-unit 578 24 mai 21:23 /home/hlin/CUDA/scaling/results_cuda_optimized.csv
+-rw-r--r--+ 1 hlin in-ma2-unit 31K 24 mai 21:23 /home/hlin/CUDA/scaling/scaling.html
+-rw-r--r--+ 1 hlin in-ma2-unit 16K 24 mai 21:23 /home/hlin/CUDA/scaling/scaling.md
+Done.
