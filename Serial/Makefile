@@ -1,0 +1,32 @@
+# TODO[Davor]: confirm SCITAS module names. Suggested:
+#   module load gcc hdf5
+# HDF5_ROOT must point at an HDF5 install that provides include/ and lib/.
+
+CXX      ?= g++
+LD       := $(CXX)
+# Only inject HDF5 include/lib paths when $HDF5_ROOT is set. Inside an
+# activated conda env, the compiler driver already knows where HDF5 lives,
+# so leaving HDF5_ROOT empty is fine and avoids spurious "-I/include" /
+# "-L/lib" flags.
+HDF5_INC := $(if $(strip $(HDF5_ROOT)),-I$(HDF5_ROOT)/include)
+HDF5_LIB := $(if $(strip $(HDF5_ROOT)),-L$(HDF5_ROOT)/lib)
+CXXFLAGS += -O3 -g -pg -Wall -Wextra -Werror -pedantic -std=c++11 $(HDF5_INC)
+LDFLAGS  += -pg $(CXXFLAGS) $(HDF5_LIB) -lhdf5 -lm
+
+OBJS = main.o lbm.o output.o
+
+all: lbm
+
+lbm: $(OBJS)
+	$(LD) -o $@ $(OBJS) $(LDFLAGS)
+
+%.o: %.cc
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+clean:
+	rm -f lbm *.o *~
+
+distclean: clean
+	rm -rf out/ probe.csv *.gif
+
+.PHONY: all clean distclean
