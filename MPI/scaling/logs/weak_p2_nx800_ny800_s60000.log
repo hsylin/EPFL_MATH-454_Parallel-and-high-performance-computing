@@ -1,0 +1,26 @@
+srun: warning: can't run 2 processes on 8 nodes, setting nnodes to 2
+LBM 2D D2Q9 BGK MPI
+  ranks         : 2
+  decomposition : 1D row-block
+  communication : non-blocking halo exchange
+  grid          : 800 x 800
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.56
+  cylinder      : (200, 400), r = 20
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : out/lbm
+  probe at      : (360, 400)
+  probe csv     : /dev/null
+Wall time max       : 843.003 s
+Wall time avg       : 843.002 s
+Compute time max    : 835.414 s
+Compute time avg    : 830.438 s
+Comm time max       : 17.5152 s
+Comm time avg       : 12.5378 s
+Comm fraction max   : 2.07772 %
+Comm fraction avg   : 1.48728 %
+Comm/max_total      : 2.07772 %
+Comm/max_compute    : 2.09659 %
+MLUPS               : 45.5515

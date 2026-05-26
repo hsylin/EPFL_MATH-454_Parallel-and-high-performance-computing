@@ -1,0 +1,25 @@
+LBM 2D D2Q9 BGK MPI
+  ranks         : 256
+  decomposition : 1D row-block
+  communication : non-blocking halo exchange
+  grid          : 800 x 102400
+  Re            : 100
+  u_in          : 0.05
+  tau           : 8.18
+  cylinder      : (200, 51200), r = 2560
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : out/lbm
+  probe at      : (20680, 51200)
+  probe csv     : /dev/null
+Wall time max       : 1618.02 s
+Wall time avg       : 1617.04 s
+Compute time max    : 1609.6 s
+Compute time avg    : 1433.29 s
+Comm time max       : 766.576 s
+Comm time avg       : 183.648 s
+Comm fraction max   : 47.4003 %
+Comm fraction avg   : 11.3576 %
+Comm/max_total      : 47.3775 %
+Comm/max_compute    : 47.6253 %
+MLUPS               : 3037.79

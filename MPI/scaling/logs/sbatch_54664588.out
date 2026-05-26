@@ -1,0 +1,319 @@
+ROOT_DIR = /home/hlin/MPI
+PWD      = /home/hlin/MPI
+Loaded modules:
+Compiler:
+/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/openmpi-5.0.3-i7bson2onqxzu5lpmymxfucij6wb5tbf/bin/mpicxx
+g++ (Spack GCC) 13.2.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Cleaning old binaries...
+Building...
+rm -f lbm *.o *~
+mpicxx -O3 -Wall -Wextra -Werror -pedantic -std=c++11 -I/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/hdf5-1.14.3-exu7sunnpz3q6yac5wxmepmb6p6fs62w/include -c -o main.o main.cc
+mpicxx -O3 -Wall -Wextra -Werror -pedantic -std=c++11 -I/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/hdf5-1.14.3-exu7sunnpz3q6yac5wxmepmb6p6fs62w/include -c -o lbm.o lbm.cc
+mpicxx -O3 -Wall -Wextra -Werror -pedantic -std=c++11 -I/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/hdf5-1.14.3-exu7sunnpz3q6yac5wxmepmb6p6fs62w/include -c -o output.o output.cc
+mpicxx -o lbm_mpi main.o lbm.o output.o -O3 -Wall -Wextra -Werror -pedantic -std=c++11 -I/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/hdf5-1.14.3-exu7sunnpz3q6yac5wxmepmb6p6fs62w/include -L/ssoft/spack/pinot-noir/jed/v2/spack/opt/spack/linux-rhel9-icelake/gcc-13.2.0/hdf5-1.14.3-exu7sunnpz3q6yac5wxmepmb6p6fs62w/lib -lhdf5 -lm
+
+============================================================
+Running MPI strong scaling
+============================================================
+PS           = 1 2 4 8 16 32 64 128 256
+STRONG_SIZES = 800x400 1200x600 1600x800
+STRONG_STEPS = 60000
+
+------------------------------------------------------------
+Strong scaling size: 800x400
+------------------------------------------------------------
+[strong] p=1 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p1_nx800_ny400_s60000.log
+Wall time max       : 952.366 s
+Compute time max    : 951.843 s
+Comm time max       : 0.451042 s
+Comm fraction max   : 0.0473601 %
+MLUPS               : 20.1603
+[strong] p=2 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p2_nx800_ny400_s60000.log
+Wall time max       : 399.962 s
+Compute time max    : 395.738 s
+Comm time max       : 10.4103 s
+Comm fraction max   : 2.60283 %
+MLUPS               : 48.0046
+[strong] p=4 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p4_nx800_ny400_s60000.log
+Wall time max       : 280.277 s
+Compute time max    : 273.581 s
+Comm time max       : 89.0352 s
+Comm fraction max   : 31.7669 %
+MLUPS               : 68.5036
+[strong] p=8 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p8_nx800_ny400_s60000.log
+Wall time max       : 119.864 s
+Compute time max    : 116.608 s
+Comm time max       : 24.1241 s
+Comm fraction max   : 20.1262 %
+MLUPS               : 160.181
+[strong] p=16 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p16_nx800_ny400_s60000.log
+Wall time max       : 58.9853 s
+Compute time max    : 55.7794 s
+Comm time max       : 11.249 s
+Comm fraction max   : 19.0712 %
+MLUPS               : 325.505
+[strong] p=32 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p32_nx800_ny400_s60000.log
+Wall time max       : 31.724 s
+Compute time max    : 29.1252 s
+Comm time max       : 8.7333 s
+Comm fraction max   : 27.5301 %
+MLUPS               : 605.22
+[strong] p=64 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p64_nx800_ny400_s60000.log
+Wall time max       : 16.7555 s
+Compute time max    : 15.1941 s
+Comm time max       : 5.32292 s
+Comm fraction max   : 31.7735 %
+MLUPS               : 1145.9
+[strong] p=128 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p128_nx800_ny400_s60000.log
+Wall time max       : 10.1131 s
+Compute time max    : 8.66111 s
+Comm time max       : 4.40968 s
+Comm fraction max   : 43.6035 %
+MLUPS               : 1898.52
+[strong] p=256 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p256_nx800_ny400_s60000.log
+Wall time max       : 6.73972 s
+Compute time max    : 4.54775 s
+Comm time max       : 4.77376 s
+Comm fraction max   : 70.8496 %
+MLUPS               : 2848.78
+
+------------------------------------------------------------
+Strong scaling size: 1200x600
+------------------------------------------------------------
+[strong] p=1 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p1_nx1200_ny600_s60000.log
+Wall time max       : 1927.12 s
+Compute time max    : 1926.61 s
+Comm time max       : 0.46079 s
+Comm fraction max   : 0.0239108 %
+MLUPS               : 22.4169
+[strong] p=2 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p2_nx1200_ny600_s60000.log
+Wall time max       : 1078.04 s
+Compute time max    : 1075.98 s
+Comm time max       : 168.21 s
+Comm fraction max   : 15.6033 %
+MLUPS               : 40.0727
+[strong] p=4 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p4_nx1200_ny600_s60000.log
+Wall time max       : 444.704 s
+Compute time max    : 442.585 s
+Comm time max       : 7.14301 s
+Comm fraction max   : 1.60624 %
+MLUPS               : 97.1433
+[strong] p=8 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p8_nx1200_ny600_s60000.log
+Wall time max       : 259.965 s
+Compute time max    : 257.353 s
+Comm time max       : 45.5977 s
+Comm fraction max   : 17.5399 %
+MLUPS               : 166.176
+[strong] p=16 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p16_nx1200_ny600_s60000.log
+Wall time max       : 121.677 s
+Compute time max    : 119.192 s
+Comm time max       : 16.1208 s
+Comm fraction max   : 13.2492 %
+MLUPS               : 355.038
+[strong] p=32 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p32_nx1200_ny600_s60000.log
+Wall time max       : 61.4116 s
+Compute time max    : 59.2237 s
+Comm time max       : 9.93749 s
+Comm fraction max   : 16.1828 %
+MLUPS               : 703.451
+[strong] p=64 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p64_nx1200_ny600_s60000.log
+Wall time max       : 34.5128 s
+Compute time max    : 32.6289 s
+Comm time max       : 9.0085 s
+Comm fraction max   : 26.1062 %
+MLUPS               : 1251.71
+[strong] p=128 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p128_nx1200_ny600_s60000.log
+Wall time max       : 18.014 s
+Compute time max    : 16.2388 s
+Comm time max       : 6.57927 s
+Comm fraction max   : 36.5396 %
+MLUPS               : 2398.14
+[strong] p=256 nx=1200 ny=600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p256_nx1200_ny600_s60000.log
+Wall time max       : 11.8066 s
+Compute time max    : 9.75008 s
+Comm time max       : 6.12126 s
+Comm fraction max   : 51.8654 %
+MLUPS               : 3658.97
+
+------------------------------------------------------------
+Strong scaling size: 1600x800
+------------------------------------------------------------
+[strong] p=1 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p1_nx1600_ny800_s60000.log
+Wall time max       : 3335.25 s
+Compute time max    : 3334.65 s
+Comm time max       : 0.553482 s
+Comm fraction max   : 0.0165949 %
+MLUPS               : 23.0268
+[strong] p=2 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p2_nx1600_ny800_s60000.log
+Wall time max       : 1726.34 s
+Compute time max    : 1724.1 s
+Comm time max       : 65.2959 s
+Comm fraction max   : 3.78233 %
+MLUPS               : 44.4872
+[strong] p=4 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p4_nx1600_ny800_s60000.log
+Wall time max       : 966.892 s
+Compute time max    : 962.244 s
+Comm time max       : 163.595 s
+Comm fraction max   : 16.9197 %
+MLUPS               : 79.4297
+[strong] p=8 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p8_nx1600_ny800_s60000.log
+Wall time max       : 527.439 s
+Compute time max    : 523.162 s
+Comm time max       : 141.492 s
+Comm fraction max   : 26.8263 %
+MLUPS               : 145.609
+[strong] p=16 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p16_nx1600_ny800_s60000.log
+Wall time max       : 251.243 s
+Compute time max    : 246.979 s
+Comm time max       : 61.7335 s
+Comm fraction max   : 24.5716 %
+MLUPS               : 305.68
+[strong] p=32 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p32_nx1600_ny800_s60000.log
+Wall time max       : 121.544 s
+Compute time max    : 117.119 s
+Comm time max       : 26.6427 s
+Comm fraction max   : 21.9202 %
+MLUPS               : 631.871
+[strong] p=64 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p64_nx1600_ny800_s60000.log
+Wall time max       : 53.9468 s
+Compute time max    : 51.4296 s
+Comm time max       : 8.38596 s
+Comm fraction max   : 15.5463 %
+MLUPS               : 1423.63
+[strong] p=128 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p128_nx1600_ny800_s60000.log
+Wall time max       : 29.8538 s
+Compute time max    : 27.6191 s
+Comm time max       : 6.2186 s
+Comm fraction max   : 20.8312 %
+MLUPS               : 2572.53
+[strong] p=256 nx=1600 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/strong_p256_nx1600_ny800_s60000.log
+Wall time max       : 19.2079 s
+Compute time max    : 17.2543 s
+Comm time max       : 7.80674 s
+Comm fraction max   : 40.67 %
+MLUPS               : 3998.36
+
+============================================================
+Running MPI weak scaling
+============================================================
+WEAK_NX      = 800
+WEAK_BASE_NY = 400
+WEAK_STEPS   = 60000
+[weak] p=1 nx=800 ny=400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p1_nx800_ny400_s60000.log
+Wall time max       : 804.347 s
+Compute time max    : 804.036 s
+Comm time max       : 0.283071 s
+Comm fraction max   : 0.0351926 %
+MLUPS               : 23.8703
+[weak] p=2 nx=800 ny=800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p2_nx800_ny800_s60000.log
+Wall time max       : 843.003 s
+Compute time max    : 835.414 s
+Comm time max       : 17.5152 s
+Comm fraction max   : 2.07772 %
+MLUPS               : 45.5515
+[weak] p=4 nx=800 ny=1600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p4_nx800_ny1600_s60000.log
+Wall time max       : 1039.36 s
+Compute time max    : 1036.62 s
+Comm time max       : 218.93 s
+Comm fraction max   : 21.064 %
+MLUPS               : 73.8917
+[weak] p=8 nx=800 ny=3200 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p8_nx800_ny3200_s60000.log
+Wall time max       : 1046.54 s
+Compute time max    : 1043.03 s
+Comm time max       : 223.691 s
+Comm fraction max   : 21.3746 %
+MLUPS               : 146.769
+[weak] p=16 nx=800 ny=6400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p16_nx800_ny6400_s60000.log
+Wall time max       : 1061.2 s
+Compute time max    : 1057.85 s
+Comm time max       : 253.501 s
+Comm fraction max   : 23.8889 %
+MLUPS               : 289.483
+[weak] p=32 nx=800 ny=12800 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p32_nx800_ny12800_s60000.log
+Wall time max       : 1180.36 s
+Compute time max    : 1177.11 s
+Comm time max       : 327.357 s
+Comm fraction max   : 27.7352 %
+MLUPS               : 520.52
+[weak] p=64 nx=800 ny=25600 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p64_nx800_ny25600_s60000.log
+Wall time max       : 1333.19 s
+Compute time max    : 1329.76 s
+Comm time max       : 462.128 s
+Comm fraction max   : 34.6659 %
+MLUPS               : 921.698
+[weak] p=128 nx=800 ny=51200 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p128_nx800_ny51200_s60000.log
+Wall time max       : 1525.32 s
+Compute time max    : 1520.37 s
+Comm time max       : 683.621 s
+Comm fraction max   : 44.8294 %
+MLUPS               : 1611.2
+[weak] p=256 nx=800 ny=102400 steps=60000
+Log: /home/hlin/MPI/scaling/logs/weak_p256_nx800_ny102400_s60000.log
+Wall time max       : 1618.02 s
+Compute time max    : 1609.6 s
+Comm time max       : 766.576 s
+Comm fraction max   : 47.4003 %
+MLUPS               : 3037.79
+
+Generating scaling markdown table...
+Parsed 36 successful runs from /home/hlin/MPI/scaling/logs
+Wrote /home/hlin/MPI/scaling/scaling.md
+
+Generating HTML report if script exists...
+Wrote /home/hlin/MPI/scaling/scaling.html
+
+Generated files:
+total 98K
+drwxr-xr-x+ 2 hlin in-ma2-unit 4.0K 26 mai 00:13 logs
+-rw-r--r--+ 1 hlin in-ma2-unit 9.8K 23 mai 23:14 make_html.py
+-rw-r--r--+ 1 hlin in-ma2-unit 9.5K 23 mai 21:18 make_table.py
+-rw-r--r--+ 1 hlin in-ma2-unit 2.2K 23 mai 23:22 run_scaling.sh
+-rw-r--r--+ 1 hlin in-ma2-unit 4.3K 25 mai 18:08 sbatch_scaling.sh
+-rw-r--r--+ 1 hlin in-ma2-unit  23K 26 mai 00:40 scaling.html
+-rw-r--r--+ 1 hlin in-ma2-unit  11K 26 mai 00:40 scaling.md
+
+Useful checks:
+  cat /home/hlin/MPI/scaling/scaling.md
+  grep -H "MLUPS" /home/hlin/MPI/scaling/logs/*.log
+  ls -lht /home/hlin/MPI/scaling/logs | head
+
+Done.
