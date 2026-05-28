@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Hybrid MPI+CUDA scaling</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;margin:32px;background:#f6f8fb;color:#1f2937}main{max-width:1200px;margin:auto}h1{font-size:2rem}h2{border-bottom:1px solid #ddd;padding-bottom:6px;margin-top:30px}.table-wrap{overflow-x:auto;background:white;border:1px solid #ddd;border-radius:12px;margin:16px 0}table{border-collapse:collapse;width:100%;min-width:900px}th,td{padding:9px 11px;border-bottom:1px solid #e5e7eb;text-align:right;white-space:nowrap}th:nth-child(2),td:nth-child(2),th:nth-child(3),td:nth-child(3){text-align:left}code{background:#eee;border-radius:4px;padding:1px 5px}
+</style></head><body><main>
+<h1>Hybrid MPI+CUDA scaling results</h1>
+<p>This table is generated from <code>scaling/results_hybrid.csv</code>. For fair performance numbers, run with <code>every=0 probe=/dev/null probe_every=0</code>. If <code>REPEATS&gt;1</code>, each row reports the median across repeats. The <code>Other</code> columns expose any residual timing outside compute and halo exchange, for example probe/output overhead if accidentally enabled.</p>
+<h2>All runs</h2>
+<div class="table-wrap"><table><thead><tr>
+<th>Ranks/GPUs</th>
+<th>Halo</th>
+<th>Grid</th>
+<th>Steps</th>
+<th>N</th>
+<th>Wall median (s)</th>
+<th>MLUPS median</th>
+<th>Speedup vs shared median 1 GPU same grid</th>
+<th>Efficiency</th>
+<th>Max halo overhead %</th>
+<th>Avg halo overhead %</th>
+<th>Max other (s)</th>
+<th>Avg other (s)</th>
+</tr></thead><tbody>
+<tr><td>1</td><td><code>cuda</code></td><td>1500x750</td><td>60000</td><td>1</td><td>14.35</td><td>4703.81</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>cuda</code></td><td>1500x750</td><td>60000</td><td>1</td><td>11.42</td><td>5910.97</td><td>1.26</td><td>62.83%</td><td>30.08%</td><td>30.03%</td><td>0.05</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>staged</code></td><td>1500x750</td><td>60000</td><td>1</td><td>14.35</td><td>4703.75</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>staged</code></td><td>1500x750</td><td>60000</td><td>1</td><td>11.53</td><td>5853.83</td><td>1.24</td><td>62.22%</td><td>30.83%</td><td>30.73%</td><td>0.04</td><td>0.03</td></tr>
+<tr><td>1</td><td><code>cuda</code></td><td>1600x800</td><td>60000</td><td>1</td><td>16.32</td><td>4705.69</td><td>1.00</td><td>100.01%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>cuda</code></td><td>1600x800</td><td>60000</td><td>1</td><td>12.31</td><td>6239.53</td><td>1.33</td><td>66.30%</td><td>28.10%</td><td>27.99%</td><td>0.04</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>staged</code></td><td>1600x800</td><td>60000</td><td>1</td><td>16.32</td><td>4705.06</td><td>1.00</td><td>99.99%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>staged</code></td><td>1600x800</td><td>60000</td><td>1</td><td>12.52</td><td>6133.26</td><td>1.30</td><td>65.17%</td><td>29.25%</td><td>29.14%</td><td>0.04</td><td>0.03</td></tr>
+<tr><td>1</td><td><code>cuda</code></td><td>3200x1600</td><td>60000</td><td>1</td><td>59.05</td><td>5202.49</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>cuda</code></td><td>3200x1600</td><td>60000</td><td>1</td><td>33.90</td><td>9061.55</td><td>1.74</td><td>87.09%</td><td>11.23%</td><td>11.16%</td><td>0.05</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>staged</code></td><td>3200x1600</td><td>60000</td><td>1</td><td>59.05</td><td>5202.22</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>staged</code></td><td>3200x1600</td><td>60000</td><td>1</td><td>34.06</td><td>9018.58</td><td>1.73</td><td>86.68%</td><td>11.57%</td><td>11.49%</td><td>0.04</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>cuda</code></td><td>6400x3200</td><td>60000</td><td>1</td><td>233.73</td><td>5257.41</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>cuda</code></td><td>6400x3200</td><td>60000</td><td>1</td><td>121.21</td><td>10137.80</td><td>1.93</td><td>96.41%</td><td>3.53%</td><td>3.52%</td><td>0.05</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>staged</code></td><td>6400x3200</td><td>60000</td><td>1</td><td>233.73</td><td>5257.35</td><td>1.00</td><td>100.00%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>staged</code></td><td>6400x3200</td><td>60000</td><td>1</td><td>122.36</td><td>10042.30</td><td>1.91</td><td>95.51%</td><td>4.39%</td><td>4.38%</td><td>0.04</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>cuda</code></td><td>800x400</td><td>60000</td><td>1</td><td>5.33</td><td>3599.61</td><td>1.00</td><td>100.04%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>cuda</code></td><td>800x400</td><td>60000</td><td>1</td><td>6.78</td><td>2831.47</td><td>0.79</td><td>39.35%</td><td>49.06%</td><td>48.87%</td><td>0.04</td><td>0.04</td></tr>
+<tr><td>1</td><td><code>staged</code></td><td>800x400</td><td>60000</td><td>1</td><td>5.34</td><td>3596.87</td><td>1.00</td><td>99.96%</td><td>0.00%</td><td>0.00%</td><td>0.02</td><td>0.02</td></tr>
+<tr><td>2</td><td><code>staged</code></td><td>800x400</td><td>60000</td><td>1</td><td>6.52</td><td>2943.09</td><td>0.82</td><td>40.90%</td><td>46.65%</td><td>46.60%</td><td>0.04</td><td>0.03</td></tr>
+</tbody></table></div>
+<h2>Best median run</h2>
+<p>Best median MLUPS: <strong>10137.80</strong> with <code>cuda</code>, ranks=2, grid=6400x3200, steps=60000, N=1.</p>
+</main></body></html>

@@ -1,0 +1,34 @@
+Command:
+srun --gpu-bind=none -n 2 /home/hlin/hybrid_fixed_v2/lbm_hybrid_cuda_mpi nx=6400 ny=3200 re=100 u_in=0.05 cyl_x=1600 cyl_y=1600 cyl_r=10 probe_x=1680 probe_y=1600 steps=120000 every=0 block_x=64 block_y=4 pitch_align=32 halo=staged strict_cuda_aware=0 probe_every=1 probe=validation/probes/hybrid_valid120k_r2_staged_nx6400_ny3200_bx64_by4_pa32_r10_s120000.csv out=validation/hybrid_out/hybrid_valid120k_r2_staged_nx6400_ny3200_bx64_by4_pa32_r10_s120000
+----
+LBM 2D D2Q9 BGK Hybrid MPI+CUDA
+  ranks         : 2
+  node mode     : intra-node only
+  halo mode     : staged
+  CUDA-aware MPI: available (MPIX_Query_cuda_support=1)
+  CUDA block    : 64 x 4
+  pitch_align   : 32
+  grid          : 6400 x 3200
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.53
+  nu            : 0.01
+  Mach          : 0.0866025
+  cylinder      : (1600, 1600), r = 10
+  steps         : 120000
+  output every  : 0 (0 = off)
+  output prefix : validation/hybrid_out/hybrid_valid120k_r2_staged_nx6400_ny3200_bx64_by4_pa32_r10_s120000
+  probe at      : (1680, 1600)
+  probe every   : 1
+  probe csv     : validation/probes/hybrid_valid120k_r2_staged_nx6400_ny3200_bx64_by4_pa32_r10_s120000.csv
+  rank layout    : rank 0 -> rows [0, 1599], GPU 0; rank 1 -> rows [1600, 3199], GPU 1;
+Wall time: 246.132 s
+MLUPS: 9984.89
+Max compute time: 233.942 s
+Max halo time: 10.7738 s
+Avg compute time: 233.929 s
+Avg halo time: 10.6899 s
+Max other time: 1.58375 s
+Avg other time: 1.51245 s
+Max halo overhead percent: 4.37723 %
+Avg halo overhead percent: 4.34316 %

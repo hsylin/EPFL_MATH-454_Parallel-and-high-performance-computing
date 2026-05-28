@@ -1,0 +1,82 @@
+==== Loaded modules ====
+
+
+Currently Loaded Modules:
+  1) gcc/11.3.0    3) libxml2/2.9.13   5) openmpi/4.1.3-cuda
+  2) zlib/1.2.12   4) cuda/11.8.0      6) hdf5/1.12.2
+
+ 
+
+==== GPU topology ====
+	[4mGPU0	GPU1	NIC0	NIC1	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	SYS	SYS	SYS	20	1		N/A
+GPU1	SYS	 X 	SYS	SYS	20	1		N/A
+NIC0	SYS	SYS	 X 	SYS				
+NIC1	SYS	SYS	SYS	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_0
+  NIC1: mlx5_1
+
+==== OpenMPI CUDA-related configuration hints ====
+config:cli: '--prefix=/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/openmpi-4.1.3-w2ynhuw7nfghas66eeeikpz2nafrym55' '--enable-shared' '--disable-silent-rules' '--disable-builtin-atomics' '--with-pmi=/usr' '--enable-static' '--enable-mca-no-build=plm-rsh' '--enable-mpi1-compatibility' '--without-psm2' '--without-hcoll' '--without-verbs' '--without-cma' '--without-psm' '--without-xpmem' '--without-fca' '--without-mxm' '--without-ofi' '--without-knem' '--with-ucx=/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/ucx-1.12.1-uotbhdd2nzg4wpajvak37xjiczwcsojn' '--without-cray-xpmem' '--with-slurm' '--without-alps' '--without-sge' '--without-tm' '--without-loadleveler' '--without-lsf' '--disable-memchecker' '--with-pmix=/usr' '--with-zlib=/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/zlib-1.2.12-jwz2ojnyqrsgx7loa3qmnp42j7gkrb3u' '--with-hwloc=/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/hwloc-2.7.1-nup7gjhusbf7u6qzanjjm5qtajgtvkuq' '--disable-java' '--disable-mpi-java' '--with-gpfs=no' '--enable-dlopen' '--with-cuda=/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.0/cuda-11.8.0-digmv672nnmhjnm43eg6xagxqaa56igy' '--enable-wrapper-rpath' '--disable-wrapper-runpath' '--disable-mpi-cxx' '--disable-cxx-exceptions' '--with-wrapper-ldflags=-Wl,-rpath,/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-x86_64_v2/gcc-11.2.1/gcc-11.3.0-xt3pxujartqg46r6lercdmcya5bcxth4/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -Wl,-rpath,/ssoft/spack/syrah/v2/opt/spack/linux-rhel9-x86_64_v2/gcc-11.2.1/gcc-11.3.0-xt3pxujartqg46r6lercdmcya5bcxth4/lib64'
+options:mpi_ext:affinity, cuda, pcollreq
+mca:btl:smcuda:version:"mca:2.1.0"
+mca:btl:smcuda:version:"api:3.1.0"
+mca:btl:smcuda:version:"component:4.1.3"
+mca:coll:cuda:version:"mca:2.1.0"
+mca:coll:cuda:version:"api:2.0.0"
+mca:coll:cuda:version:"component:4.1.3"
+mca:opal:base:param:opal_built_with_cuda_support:value:true
+mca:opal:base:param:opal_built_with_cuda_support:source:default
+mca:opal:base:param:opal_built_with_cuda_support:status:read-only
+mca:opal:base:param:opal_built_with_cuda_support:level:4
+mca:opal:base:param:opal_built_with_cuda_support:help:Whether CUDA GPU buffer support is built into library or not
+mca:opal:base:param:opal_built_with_cuda_support:enumerator:value:0:false
+mca:opal:base:param:opal_built_with_cuda_support:enumerator:value:1:true
+mca:opal:base:param:opal_built_with_cuda_support:deprecated:no
+mca:opal:base:param:opal_built_with_cuda_support:type:bool
+mca:opal:base:param:opal_built_with_cuda_support:synonym:name:mpi_built_with_cuda_support
+mca:opal:base:param:opal_built_with_cuda_support:disabled:false
+mca:opal:base:param:opal_cuda_support:value:true
+mca:opal:base:param:opal_cuda_support:source:default
+mca:opal:base:param:opal_cuda_support:status:writeable
+mca:opal:base:param:opal_cuda_support:level:3
+mca:opal:base:param:opal_cuda_support:help:Whether CUDA GPU buffer support is enabled or not
+mca:opal:base:param:opal_cuda_support:enumerator:value:0:false
+mca:opal:base:param:opal_cuda_support:enumerator:value:1:true
+mca:opal:base:param:opal_cuda_support:deprecated:no
+mca:opal:base:param:opal_cuda_support:type:bool
+mca:opal:base:param:opal_cuda_support:synonym:name:mpi_cuda_support
+mca:opal:base:param:opal_cuda_support:disabled:false
+mca:opal:base:param:opal_warn_on_missing_libcuda:value:true
+mca:opal:base:param:opal_warn_on_missing_libcuda:source:default
+mca:opal:base:param:opal_warn_on_missing_libcuda:status:writeable
+mca:opal:base:param:opal_warn_on_missing_libcuda:level:3
+mca:opal:base:param:opal_warn_on_missing_libcuda:help:Whether to print a message when CUDA support is enabled but libcuda is not found
+mca:opal:base:param:opal_warn_on_missing_libcuda:enumerator:value:0:false
+mca:opal:base:param:opal_warn_on_missing_libcuda:enumerator:value:1:true
+mca:opal:base:param:opal_warn_on_missing_libcuda:deprecated:no
+mca:opal:base:param:opal_warn_on_missing_libcuda:type:bool
+mca:opal:base:param:opal_warn_on_missing_libcuda:disabled:false
+mca:btl:self:param:btl_self_flags:enumerator:value:1024:cuda-put
+mca:btl:self:param:btl_self_flags:enumerator:value:2048:cuda-get
+mca:btl:self:param:btl_self_flags:enumerator:value:4096:cuda-async-send
+mca:btl:self:param:btl_self_flags:enumerator:value:8192:cuda-async-recv
+mca:btl:self:param:btl_self_cuda_eager_limit:value:0
+mca:btl:self:param:btl_self_cuda_eager_limit:source:default
+mca:btl:self:param:btl_self_cuda_eager_limit:status:read-only
+mca:btl:self:param:btl_self_cuda_eager_limit:level:5
+mca:btl:self:param:btl_self_cuda_eager_limit:help:Maximum size (in bytes, including header) of "GPU short" messages (must be >= 1).
+mca:btl:self:param:btl_self_cuda_eager_limit:deprecated:no

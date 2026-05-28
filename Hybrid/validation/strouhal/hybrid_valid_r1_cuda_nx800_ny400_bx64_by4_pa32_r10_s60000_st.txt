@@ -1,0 +1,6 @@
+Probe file: validation/probes/hybrid_valid_r1_cuda_nx800_ny400_bx64_by4_pa32_r10_s60000.csv
+Component: uy
+Samples used: 45000 after discarding 15000
+Peak shedding frequency: 4.00000000e-04 cycles/step
+Cylinder diameter D: 20
+Strouhal number: 0.160000

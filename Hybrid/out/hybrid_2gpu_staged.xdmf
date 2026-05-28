@@ -1,0 +1,2768 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid Name="LBM" GridType="Collection" CollectionType="Temporal">
+      <Grid Name="step_000000" GridType="Uniform">
+        <Time Value="500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000000.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000000.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000000.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000000.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000001" GridType="Uniform">
+        <Time Value="1000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000001.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000001.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000001.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000001.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000002" GridType="Uniform">
+        <Time Value="1500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000002.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000002.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000002.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000002.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000003" GridType="Uniform">
+        <Time Value="2000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000003.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000003.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000003.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000003.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000004" GridType="Uniform">
+        <Time Value="2500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000004.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000004.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000004.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000004.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000005" GridType="Uniform">
+        <Time Value="3000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000005.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000005.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000005.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000005.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000006" GridType="Uniform">
+        <Time Value="3500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000006.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000006.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000006.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000006.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000007" GridType="Uniform">
+        <Time Value="4000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000007.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000007.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000007.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000007.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000008" GridType="Uniform">
+        <Time Value="4500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000008.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000008.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000008.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000008.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000009" GridType="Uniform">
+        <Time Value="5000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000009.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000009.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000009.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000009.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000010" GridType="Uniform">
+        <Time Value="5500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000010.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000010.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000010.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000010.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000011" GridType="Uniform">
+        <Time Value="6000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000011.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000011.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000011.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000011.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000012" GridType="Uniform">
+        <Time Value="6500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000012.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000012.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000012.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000012.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000013" GridType="Uniform">
+        <Time Value="7000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000013.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000013.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000013.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000013.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000014" GridType="Uniform">
+        <Time Value="7500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000014.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000014.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000014.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000014.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000015" GridType="Uniform">
+        <Time Value="8000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000015.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000015.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000015.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000015.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000016" GridType="Uniform">
+        <Time Value="8500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000016.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000016.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000016.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000016.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000017" GridType="Uniform">
+        <Time Value="9000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000017.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000017.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000017.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000017.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000018" GridType="Uniform">
+        <Time Value="9500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000018.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000018.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000018.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000018.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000019" GridType="Uniform">
+        <Time Value="10000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000019.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000019.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000019.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000019.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000020" GridType="Uniform">
+        <Time Value="10500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000020.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000020.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000020.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000020.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000021" GridType="Uniform">
+        <Time Value="11000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000021.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000021.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000021.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000021.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000022" GridType="Uniform">
+        <Time Value="11500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000022.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000022.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000022.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000022.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000023" GridType="Uniform">
+        <Time Value="12000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000023.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000023.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000023.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000023.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000024" GridType="Uniform">
+        <Time Value="12500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000024.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000024.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000024.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000024.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000025" GridType="Uniform">
+        <Time Value="13000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000025.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000025.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000025.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000025.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000026" GridType="Uniform">
+        <Time Value="13500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000026.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000026.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000026.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000026.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000027" GridType="Uniform">
+        <Time Value="14000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000027.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000027.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000027.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000027.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000028" GridType="Uniform">
+        <Time Value="14500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000028.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000028.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000028.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000028.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000029" GridType="Uniform">
+        <Time Value="15000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000029.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000029.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000029.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000029.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000030" GridType="Uniform">
+        <Time Value="15500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000030.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000030.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000030.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000030.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000031" GridType="Uniform">
+        <Time Value="16000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000031.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000031.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000031.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000031.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000032" GridType="Uniform">
+        <Time Value="16500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000032.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000032.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000032.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000032.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000033" GridType="Uniform">
+        <Time Value="17000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000033.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000033.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000033.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000033.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000034" GridType="Uniform">
+        <Time Value="17500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000034.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000034.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000034.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000034.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000035" GridType="Uniform">
+        <Time Value="18000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000035.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000035.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000035.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000035.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000036" GridType="Uniform">
+        <Time Value="18500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000036.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000036.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000036.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000036.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000037" GridType="Uniform">
+        <Time Value="19000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000037.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000037.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000037.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000037.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000038" GridType="Uniform">
+        <Time Value="19500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000038.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000038.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000038.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000038.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000039" GridType="Uniform">
+        <Time Value="20000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000039.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000039.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000039.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000039.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000040" GridType="Uniform">
+        <Time Value="20500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000040.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000040.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000040.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000040.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000041" GridType="Uniform">
+        <Time Value="21000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000041.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000041.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000041.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000041.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000042" GridType="Uniform">
+        <Time Value="21500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000042.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000042.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000042.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000042.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000043" GridType="Uniform">
+        <Time Value="22000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000043.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000043.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000043.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000043.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000044" GridType="Uniform">
+        <Time Value="22500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000044.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000044.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000044.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000044.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000045" GridType="Uniform">
+        <Time Value="23000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000045.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000045.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000045.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000045.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000046" GridType="Uniform">
+        <Time Value="23500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000046.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000046.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000046.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000046.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000047" GridType="Uniform">
+        <Time Value="24000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000047.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000047.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000047.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000047.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000048" GridType="Uniform">
+        <Time Value="24500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000048.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000048.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000048.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000048.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000049" GridType="Uniform">
+        <Time Value="25000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000049.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000049.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000049.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000049.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000050" GridType="Uniform">
+        <Time Value="25500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000050.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000050.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000050.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000050.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000051" GridType="Uniform">
+        <Time Value="26000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000051.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000051.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000051.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000051.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000052" GridType="Uniform">
+        <Time Value="26500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000052.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000052.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000052.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000052.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000053" GridType="Uniform">
+        <Time Value="27000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000053.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000053.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000053.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000053.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000054" GridType="Uniform">
+        <Time Value="27500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000054.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000054.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000054.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000054.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000055" GridType="Uniform">
+        <Time Value="28000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000055.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000055.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000055.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000055.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000056" GridType="Uniform">
+        <Time Value="28500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000056.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000056.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000056.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000056.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000057" GridType="Uniform">
+        <Time Value="29000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000057.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000057.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000057.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000057.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000058" GridType="Uniform">
+        <Time Value="29500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000058.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000058.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000058.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000058.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000059" GridType="Uniform">
+        <Time Value="30000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000059.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000059.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000059.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000059.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000060" GridType="Uniform">
+        <Time Value="30500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000060.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000060.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000060.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000060.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000061" GridType="Uniform">
+        <Time Value="31000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000061.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000061.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000061.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000061.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000062" GridType="Uniform">
+        <Time Value="31500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000062.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000062.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000062.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000062.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000063" GridType="Uniform">
+        <Time Value="32000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000063.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000063.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000063.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000063.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000064" GridType="Uniform">
+        <Time Value="32500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000064.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000064.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000064.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000064.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000065" GridType="Uniform">
+        <Time Value="33000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000065.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000065.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000065.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000065.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000066" GridType="Uniform">
+        <Time Value="33500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000066.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000066.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000066.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000066.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000067" GridType="Uniform">
+        <Time Value="34000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000067.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000067.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000067.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000067.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000068" GridType="Uniform">
+        <Time Value="34500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000068.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000068.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000068.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000068.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000069" GridType="Uniform">
+        <Time Value="35000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000069.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000069.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000069.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000069.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000070" GridType="Uniform">
+        <Time Value="35500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000070.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000070.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000070.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000070.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000071" GridType="Uniform">
+        <Time Value="36000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000071.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000071.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000071.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000071.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000072" GridType="Uniform">
+        <Time Value="36500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000072.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000072.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000072.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000072.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000073" GridType="Uniform">
+        <Time Value="37000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000073.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000073.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000073.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000073.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000074" GridType="Uniform">
+        <Time Value="37500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000074.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000074.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000074.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000074.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000075" GridType="Uniform">
+        <Time Value="38000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000075.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000075.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000075.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000075.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000076" GridType="Uniform">
+        <Time Value="38500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000076.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000076.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000076.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000076.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000077" GridType="Uniform">
+        <Time Value="39000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000077.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000077.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000077.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000077.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000078" GridType="Uniform">
+        <Time Value="39500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000078.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000078.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000078.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000078.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000079" GridType="Uniform">
+        <Time Value="40000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000079.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000079.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000079.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000079.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000080" GridType="Uniform">
+        <Time Value="40500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000080.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000080.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000080.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000080.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000081" GridType="Uniform">
+        <Time Value="41000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000081.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000081.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000081.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000081.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000082" GridType="Uniform">
+        <Time Value="41500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000082.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000082.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000082.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000082.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000083" GridType="Uniform">
+        <Time Value="42000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000083.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000083.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000083.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000083.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000084" GridType="Uniform">
+        <Time Value="42500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000084.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000084.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000084.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000084.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000085" GridType="Uniform">
+        <Time Value="43000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000085.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000085.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000085.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000085.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000086" GridType="Uniform">
+        <Time Value="43500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000086.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000086.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000086.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000086.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000087" GridType="Uniform">
+        <Time Value="44000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000087.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000087.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000087.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000087.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000088" GridType="Uniform">
+        <Time Value="44500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000088.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000088.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000088.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000088.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000089" GridType="Uniform">
+        <Time Value="45000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000089.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000089.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000089.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000089.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000090" GridType="Uniform">
+        <Time Value="45500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000090.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000090.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000090.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000090.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000091" GridType="Uniform">
+        <Time Value="46000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000091.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000091.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000091.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000091.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000092" GridType="Uniform">
+        <Time Value="46500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000092.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000092.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000092.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000092.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000093" GridType="Uniform">
+        <Time Value="47000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000093.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000093.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000093.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000093.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000094" GridType="Uniform">
+        <Time Value="47500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000094.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000094.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000094.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000094.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000095" GridType="Uniform">
+        <Time Value="48000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000095.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000095.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000095.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000095.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000096" GridType="Uniform">
+        <Time Value="48500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000096.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000096.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000096.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000096.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000097" GridType="Uniform">
+        <Time Value="49000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000097.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000097.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000097.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000097.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000098" GridType="Uniform">
+        <Time Value="49500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000098.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000098.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000098.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000098.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000099" GridType="Uniform">
+        <Time Value="50000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000099.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000099.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000099.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000099.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000100" GridType="Uniform">
+        <Time Value="50500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000100.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000100.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000100.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000100.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000101" GridType="Uniform">
+        <Time Value="51000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000101.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000101.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000101.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000101.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000102" GridType="Uniform">
+        <Time Value="51500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000102.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000102.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000102.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000102.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000103" GridType="Uniform">
+        <Time Value="52000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000103.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000103.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000103.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000103.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000104" GridType="Uniform">
+        <Time Value="52500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000104.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000104.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000104.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000104.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000105" GridType="Uniform">
+        <Time Value="53000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000105.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000105.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000105.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000105.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000106" GridType="Uniform">
+        <Time Value="53500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000106.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000106.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000106.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000106.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000107" GridType="Uniform">
+        <Time Value="54000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000107.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000107.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000107.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000107.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000108" GridType="Uniform">
+        <Time Value="54500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000108.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000108.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000108.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000108.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000109" GridType="Uniform">
+        <Time Value="55000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000109.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000109.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000109.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000109.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000110" GridType="Uniform">
+        <Time Value="55500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000110.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000110.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000110.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000110.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000111" GridType="Uniform">
+        <Time Value="56000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000111.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000111.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000111.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000111.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000112" GridType="Uniform">
+        <Time Value="56500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000112.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000112.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000112.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000112.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000113" GridType="Uniform">
+        <Time Value="57000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000113.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000113.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000113.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000113.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000114" GridType="Uniform">
+        <Time Value="57500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000114.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000114.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000114.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000114.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000115" GridType="Uniform">
+        <Time Value="58000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000115.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000115.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000115.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000115.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000116" GridType="Uniform">
+        <Time Value="58500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000116.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000116.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000116.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000116.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000117" GridType="Uniform">
+        <Time Value="59000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000117.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000117.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000117.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000117.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000118" GridType="Uniform">
+        <Time Value="59500"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000118.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000118.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000118.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000118.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+      <Grid Name="step_000119" GridType="Uniform">
+        <Time Value="60000"/>
+        <Topology TopologyType="2DCoRectMesh" Dimensions="400 800"/>
+        <Geometry GeometryType="ORIGIN_DXDY">
+          <DataItem Format="XML" Dimensions="2">0.0 0.0</DataItem>
+          <DataItem Format="XML" Dimensions="2">1.0 1.0</DataItem>
+        </Geometry>
+        <Attribute Name="rho" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000119.h5:/rho</DataItem>
+        </Attribute>
+        <Attribute Name="ux" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000119.h5:/ux</DataItem>
+        </Attribute>
+        <Attribute Name="uy" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000119.h5:/uy</DataItem>
+        </Attribute>
+        <Attribute Name="vorticity" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="Float" Precision="8">hybrid_2gpu_staged_000119.h5:/vorticity</DataItem>
+        </Attribute>
+        <Attribute Name="solid" AttributeType="Scalar" Center="Node">
+          <DataItem Format="HDF" Dimensions="400 800" NumberType="UChar">hybrid_2gpu_staged_mask.h5:/solid</DataItem>
+        </Attribute>
+      </Grid>
+    </Grid>
+  </Domain>
+</Xdmf>

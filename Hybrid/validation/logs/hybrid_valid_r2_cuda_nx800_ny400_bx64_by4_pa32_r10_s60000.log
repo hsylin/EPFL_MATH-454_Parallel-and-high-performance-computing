@@ -1,0 +1,35 @@
+Command:
+srun --gpu-bind=none -n 2 /home/hlin/hybrid_fixed_v2/lbm_hybrid_cuda_mpi nx=800 ny=400 re=100 u_in=0.05 cyl_x=200 cyl_y=200 cyl_r=10 probe_x=280 probe_y=200 steps=60000 every=0 block_x=64 block_y=4 pitch_align=32 halo=cuda strict_cuda_aware=1 probe_every=1 probe=validation/probes/hybrid_valid_r2_cuda_nx800_ny400_bx64_by4_pa32_r10_s60000.csv out=validation/hybrid_out/hybrid_valid_r2_cuda_nx800_ny400_bx64_by4_pa32_r10_s60000
+----
+LBM 2D D2Q9 BGK Hybrid MPI+CUDA
+  ranks         : 2
+  node mode     : intra-node only
+  halo mode     : cuda
+  CUDA-aware MPI: available (MPIX_Query_cuda_support=1)
+  CUDA block    : 64 x 4
+  pitch_align   : 32
+  grid          : 800 x 400
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.53
+  nu            : 0.01
+  Mach          : 0.0866025
+  cylinder      : (200, 200), r = 10
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : validation/hybrid_out/hybrid_valid_r2_cuda_nx800_ny400_bx64_by4_pa32_r10_s60000
+  probe at      : (280, 200)
+  probe every   : 1
+  probe csv     : validation/probes/hybrid_valid_r2_cuda_nx800_ny400_bx64_by4_pa32_r10_s60000.csv
+  CUDA-aware note: device pointers are passed directly to MPI; this does not by itself imply NVLink, GPUDirect RDMA, or zero-copy transfer.
+  rank layout    : rank 0 -> rows [0, 199], GPU 0; rank 1 -> rows [200, 399], GPU 1;
+Wall time: 7.62862 s
+MLUPS: 2516.84
+Max compute time: 3.43966 s
+Max halo time: 3.41153 s
+Avg compute time: 3.4338 s
+Avg halo time: 3.36213 s
+Max other time: 0.887945 s
+Avg other time: 0.832685 s
+Max halo overhead percent: 44.7201 %
+Avg halo overhead percent: 44.0726 %

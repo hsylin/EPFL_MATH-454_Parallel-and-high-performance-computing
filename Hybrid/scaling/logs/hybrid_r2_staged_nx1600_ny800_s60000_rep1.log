@@ -1,0 +1,34 @@
+Command:
+  srun --gpu-bind=none -n 2 /home/hlin/hybrid_fixed_v2/lbm_hybrid_cuda_mpi nx=1600 ny=800 re=100 u_in=0.05 steps=60000 block_x=64 block_y=4 pitch_align=32 halo=staged strict_cuda_aware=1 every=0 out=/home/hlin/hybrid_fixed_v2/scaling/out/hybrid_r2_staged_nx1600_ny800_s60000_rep1 probe=/dev/null probe_every=0
+----
+LBM 2D D2Q9 BGK Hybrid MPI+CUDA
+  ranks         : 2
+  node mode     : intra-node only
+  halo mode     : staged
+  CUDA-aware MPI: available (MPIX_Query_cuda_support=1)
+  CUDA block    : 64 x 4
+  pitch_align   : 32
+  grid          : 1600 x 800
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.56
+  nu            : 0.02
+  Mach          : 0.0866025
+  cylinder      : (400, 400), r = 20
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : /home/hlin/hybrid_fixed_v2/scaling/out/hybrid_r2_staged_nx1600_ny800_s60000_rep1
+  probe at      : (560, 400)
+  probe every   : 0
+  probe csv     : /dev/null
+  rank layout    : rank 0 -> rows [0, 399], GPU 0; rank 1 -> rows [400, 799], GPU 1;
+Wall time: 12.5219 s
+MLUPS: 6133.26
+Max compute time: 8.84874 s
+Max halo time: 3.66252 s
+Avg compute time: 8.83895 s
+Avg halo time: 3.64872 s
+Max other time: 0.0382145 s
+Avg other time: 0.0342103 s
+Max halo overhead percent: 29.249 %
+Avg halo overhead percent: 29.1388 %

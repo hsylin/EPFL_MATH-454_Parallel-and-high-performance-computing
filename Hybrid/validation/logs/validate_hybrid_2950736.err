@@ -1,0 +1,11 @@
+
+Currently Loaded Modules:
+  1) gcc/11.3.0    3) libxml2/2.9.13   5) openmpi/4.1.3-cuda
+  2) zlib/1.2.12   4) cuda/11.8.0      6) hdf5/1.12.2
+
+ 
+
+usage: strouhal.py [-h] --ny NY --u-in U_IN [--diameter DIAMETER]
+                   [--component {ux,uy}] [--discard-frac DISCARD_FRAC]
+                   probe_csv
+strouhal.py: error: the following arguments are required: --ny

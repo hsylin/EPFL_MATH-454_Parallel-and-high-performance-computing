@@ -1,0 +1,6 @@
+Probe file: validation/probes/hybrid_valid120k_r1_staged_nx1600_ny800_bx64_by4_pa32_r10_s120000.csv
+Component: uy
+Samples used: 90000 after discarding 30000
+Peak shedding frequency: 4.00000000e-04 cycles/step
+Cylinder diameter D: 20
+Strouhal number: 0.160000

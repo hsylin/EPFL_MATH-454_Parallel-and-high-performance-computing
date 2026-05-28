@@ -1,0 +1,35 @@
+Command:
+  srun --gpu-bind=none -n 1 /home/hlin/hybrid_fixed_v2/lbm_hybrid_cuda_mpi nx=800 ny=400 re=100 u_in=0.05 steps=60000 block_x=64 block_y=4 pitch_align=32 halo=cuda strict_cuda_aware=1 every=0 out=/home/hlin/hybrid_fixed_v2/scaling/out/hybrid_r1_cuda_nx800_ny400_s60000_rep1 probe=/dev/null probe_every=0
+----
+LBM 2D D2Q9 BGK Hybrid MPI+CUDA
+  ranks         : 1
+  node mode     : intra-node only
+  halo mode     : cuda
+  CUDA-aware MPI: available (MPIX_Query_cuda_support=1)
+  CUDA block    : 64 x 4
+  pitch_align   : 32
+  grid          : 800 x 400
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.53
+  nu            : 0.01
+  Mach          : 0.0866025
+  cylinder      : (200, 200), r = 10
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : /home/hlin/hybrid_fixed_v2/scaling/out/hybrid_r1_cuda_nx800_ny400_s60000_rep1
+  probe at      : (280, 200)
+  probe every   : 0
+  probe csv     : /dev/null
+  CUDA-aware note: device pointers are passed directly to MPI; this does not by itself imply NVLink, GPUDirect RDMA, or zero-copy transfer.
+  rank layout    : rank 0 -> rows [0, 399], GPU 0;
+Wall time: 5.33391 s
+MLUPS: 3599.61
+Max compute time: 5.3172 s
+Max halo time: 0 s
+Avg compute time: 5.3172 s
+Avg halo time: 0 s
+Max other time: 0.0167101 s
+Avg other time: 0.0167101 s
+Max halo overhead percent: 0 %
+Avg halo overhead percent: 0 %
