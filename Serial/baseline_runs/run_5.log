@@ -1,0 +1,13 @@
+LBM 2D D2Q9 BGK
+  grid          : 800 x 400
+  Re            : 100
+  u_in          : 0.05
+  tau           : 0.53
+  cylinder      : (200, 200), r = 10
+  steps         : 60000
+  output every  : 0 (0 = off)
+  output prefix : baseline_runs/lbm_5
+  probe at      : (280, 200)
+  probe csv     : /dev/null
+Wall time : 895.162 s
+MLUPS     : 21.4486
